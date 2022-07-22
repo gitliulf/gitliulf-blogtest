@@ -24,11 +24,8 @@ jobs:
               with:
                     node-version: '14'
 
-            - name :npm 
-              run: npm install
-
             - name: Build Web
-              run: hugo
+              run: npm install & hugo
 
             - name: Deploy Web
               uses: peaceiris/actions-gh-pages@v3
