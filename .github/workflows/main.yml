@@ -19,11 +19,11 @@ jobs:
                   hugo-version: "latest"
                   extended: true
 
-
             - name: Setup Node
               uses: actions/setup-node@v2
               with:
                     node-version: '14'
+           -name :npm 
               run: npm install
 
             - name: Build Web
