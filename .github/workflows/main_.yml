@@ -1,7 +1,7 @@
 name: deploy
+
 on:
     push:
-    workflow_dispatch:
 
 jobs:
     build:
@@ -16,7 +16,7 @@ jobs:
             - name: Setup Hugo
               uses: peaceiris/actions-hugo@v2
               with:
-                  hugo-version: "latest"
+                  hugo-version: '0.91.2'
                   extended: true
 
             - name: Build Web
